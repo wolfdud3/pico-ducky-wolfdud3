@@ -1,9 +1,6 @@
-# pico-ducky-wolfdud3
-Build a RubberDucky out of a Raspberry Pi Pico
+# Preparations
 
-## Preparations
-
-## Creating the Rubber Ducky
+# Creating the Rubber Ducky
 
 ### Connect the Raspberry Pi
 Hold the button on Raspberry Pi and connect it to your computer using the USB cable. The Pi should show up as RPI-RP2. 
@@ -27,7 +24,7 @@ From now on the Pico needs to be put into setup/arming mode, otherwise the devic
 Save scripts as payload.dd om the root directory of the Pico.
 You can save up to six scripts: payload.dd, payload2.dd, etc., payload6.dd
 
-## Usage
+# Usage
 
 ### Setup/Arming Mode
 
