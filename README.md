@@ -49,5 +49,5 @@ To prevent that the Pico shows up in the filesystem when you connect it, connect
 
 ### Change Keyboard Layout
 To change the keyboard layout from US English to another, first download the bundle with keyboard layouts from [here](https://github.com/Neradoc/Circuitpython_Keyboard_Layouts/releases/tag/20221209). Make sure that it is for the right CircuitPython version.
-Put the keyboard layout into the lib folder.
+Put the keyboard layout into the lib folder, **not** into adafruit_hid.<br>
 Modify the code to import the new keyboards. For that comment and uncomment the corresponding lines and change LANG to the letters for your keyboard language.
