@@ -45,9 +45,8 @@ To select the payload, connect folowwing GPIO Pins to Ground.
 - Payload 6: GPIO 15
 
 ### Stealth Mode
-To prevent that the Pico shows up in the filesystem when you connect it, connect GPIO 16 to Ground.
+When the stealth mode is activated, the Pi will not show up as a USB device, if you connect it to a computer. For this connect GPIO 16 to Ground.
 
 ### Change Keyboard Layout
-To change the keyboard layout from US English to another, first download the bundle with keyboard layouts from [here](https://github.com/Neradoc/Circuitpython_Keyboard_Layouts/releases/tag/20221209). Make sure that it is for the right CircuitPython version.
-Put the keyboard layout into the lib folder, **not** into adafruit_hid.<br>
-Modify the code to import the new keyboards. For that comment and uncomment the corresponding lines and change LANG to the letters for your keyboard language.
+The original keyboard layout is set to US English. To change the language, download the keyboard layouts from [here](https://github.com/Neradoc/Circuitpython_Keyboard_Layouts/releases/tag/20221209).<br>
+Put the keyboard layout into the lib folder on the Pi and change the imports in code.
