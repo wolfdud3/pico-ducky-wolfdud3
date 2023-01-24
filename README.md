@@ -1,4 +1,8 @@
 # Preparations
+- Raspberry Pi Pico
+- CircuitPython 7.X.X from [here](https://circuitpython.org/board/raspberry_pi_pico/)
+- [adafruit-circuitpython-bundle](https://github.com/adafruit/Adafruit_CircuitPython_Bundle/releases/latest); extract it outside of the Pico
+- the code from here
 
 # Creating the Rubber Ducky
 
