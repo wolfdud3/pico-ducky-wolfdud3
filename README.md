@@ -1,3 +1,5 @@
+This code is based off the code from [dbisu](https://github.com/dbisu/pico-ducky). The main change of this code were made to host up to six payloads, instead of the original four.
+
 # Preparations
 - Raspberry Pi Pico
 - CircuitPython 7.X.X from [here](https://circuitpython.org/board/raspberry_pi_pico/)
@@ -31,9 +33,21 @@ You can save up to six scripts: payload.dd, payload2.dd, etc., payload6.dd
 # Usage
 
 ### Setup/Arming Mode
+To prevent the execution of payloads connect pin GPIO 0 to Ground.
 
 ### Selecting the Payload
+To select the payload, connect folowwing GPIO Pins to Ground.
+- Payload 1: GPIO 4
+- Payload 2: GPIO 5
+- Payload 3: GPIO 10
+- Payload 4: GPIO 11 
+- Payload 5: GPIO 14
+- Payload 6: GPIO 15
 
 ### Stealth Mode
+To prevent that the Pico shows up in the filesystem when you connect it, connect GPIO 16 to Ground.
 
 ### Change Keyboard Layout
+To change the keyboard layout from US English to another, first download the bundle with keyboard layouts from [here](https://github.com/Neradoc/Circuitpython_Keyboard_Layouts/releases/tag/20221209). Make sure that it is for the right CircuitPython version.
+Put the keyboard layout into the lib folder.
+Modify the code to import the new keyboards. For that comment and uncomment the corresponding lines and change LANG to the letters for your keyboard language.
