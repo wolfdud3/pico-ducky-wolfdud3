@@ -181,7 +181,7 @@ def selectPayload():
     global payload1Pin, payload2Pin, payload3Pin, payload4Pin
     payload = "payload.dd"
     # check switch status
-    # payload1 = GPIO4; payload2 = GPIO5; payload3 = GPIO10; payload4 = GPIO11; payload5 = GPIO14; payload6 = GPIO15
+    # payload1 = GPIO 4; payload2 = GPIO 5; payload3 = GPIO 10; payload4 = GPIO 11; payload5 = GPIO 14; payload6 = GPIO 15
     payload1State = not payload1Pin.value
     payload2State = not payload2Pin.value
     payload3State = not payload3Pin.value
